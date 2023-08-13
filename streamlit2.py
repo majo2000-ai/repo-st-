@@ -4,7 +4,7 @@ import numpy as np
 import base64
 import io
 from io import BytesIO, StringIO
-import xlsxwriter 
+#import xlsxwriter 
 import os
 
 def main():
@@ -14,7 +14,7 @@ def main():
     
     st.write("Hallo")
     with open("Datenanforderung.pdf", "rb") as f:
-        btn = st.download_button(label="Download Datenanforderung", data=f, file_name="Datenanforderung.pdf")
+        btn = st.download_button(label="Download Datenanforderung", data=f, file_name="http://majo2000.bplaced.net/python/Datenanforderung.pdf")
     
     textcontents = """
     Nr,ArtikelNr, InvWert, InvBestand, Abgang
